@@ -58,6 +58,28 @@ interface OwnerData {
   stats: Stats
 }
 
+interface APIResponse {
+  live: {
+    id: string,
+    name: string,
+    hlsUrl: string,
+    nsfw: boolean,
+    isLive: boolean,
+    thumbnail: string,
+    heartCount: number,
+    chatCount: number,
+    audienceCount: number,
+    totalAudienceCount: number
+  },
+  owner: {
+    id: number,
+    name: string,
+    username: string,
+    picture: string,
+    following: number,
+    followers: number
+  }
+}
 
 interface User {
   id: number
@@ -159,4 +181,4 @@ interface Stats {
 }
 
 
-export { LiveData, OwnerData };
+export { LiveData, OwnerData, APIResponse };
