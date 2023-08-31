@@ -10,6 +10,6 @@
 
 <style>
   .container {
-    @apply flex justify-center items-center w-full min-h-screen;
+    @apply w-full min-h-screen;
   }
 </style>
